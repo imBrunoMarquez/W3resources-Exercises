@@ -538,5 +538,27 @@ function exercise43(num1, num2, num3) {
   }
 }
 
+function exercise44(num1, num2, num3) {
+  if (num1 < 20 && num1 < num2 && num1 < num3) {
+    console.log(true);
+  }
+  if (num2 < 20 && num2 < num1 && num2 < num3) {
+    console.log(true);
+  }
+  if (num3 < 20 && num3 < num1 && num3 < num2) {
+    console.log(true);
+  }
+  console.log(false);
+}
+
+function exercise45(num1, num2) {
+  if (num1 === 15 || num2 === 15 || num1 + num2 === 15 || Math.abs(num1 - num2) === 15) {
+    console.log(true);
+  } else {
+    console.log(false);
+  }
+}
+
+
 // call the exercise function there
 exercise43(1,2,4);
