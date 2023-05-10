@@ -339,5 +339,44 @@ function exercise25(num) {
   }
 }
 
+function exercise26(str) {
+  // Check if string length is 3 or more
+  if (str.length < 3) {
+    console.log("String length must be 3 or more");
+    return;
+  }
+
+  // Get last 3 characters of the input string
+  let lastThreeChars = str.slice(-3);
+
+  // Add last 3 characters at both front and back of the new string
+  let newStr = lastThreeChars + str + lastThreeChars;
+
+  console.log(newStr);
+}
+
+function exercise27(str) {
+  if (str.startsWith("Java")) {
+    console.log("The string starts with 'Java'");
+  } else {
+    console.log("The string does not start with 'Java'");
+  }
+}
+
+function exercise28(num1, num2) {
+  if ((num1 >= 50 && num1 <= 99) || (num2 >= 50 && num2 <= 99)) {
+    console.log(true);
+  } else {
+    console.log(false);
+  }
+}
+
+function exercise29(num1, num2, num3) {
+  if ((num1 >= 50 && num1 <= 99) || (num2 >= 50 && num2 <= 99) || (num3 >= 50 && num3 <= 99)) {
+    console.log(true);
+  } else {
+    console.log(false);
+  }
+}
 // call the exercise function there
-exercise25(21);
+exercise27("qwerty");
