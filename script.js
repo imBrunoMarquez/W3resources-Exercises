@@ -287,6 +287,14 @@ function exercise21(str) {
   }
 }
 
+function exercise22(str, index) {
+  // This removes the character at the specified position
+  let modifiedStr = str.slice(0, index) + str.slice(index + 1);
+  
+  // Return the modified string
+  console.log(modifiedStr);
+}
+
 
 // call the exercise function there
-exercise21("test");
+exercise22("test", 2);
