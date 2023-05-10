@@ -524,5 +524,19 @@ function exercise42(num1, num2, num3) {
   }
 }
 
+function exercise43(num1, num2, num3) {
+  // Get the rightmost digit of each number
+  const digit1 = num1 % 10;
+  const digit2 = num2 % 10;
+  const digit3 = num3 % 10;
+
+  // Check if any two or all three of them have the same rightmost digit
+  if (digit1 === digit2 || digit1 === digit3 || digit2 === digit3 || digit1 === digit2 && digit2 === digit3) {
+    console.log(true);
+  } else {
+    console.log(false);
+  }
+}
+
 // call the exercise function there
-exercise37("te");
+exercise43(1,2,4);
