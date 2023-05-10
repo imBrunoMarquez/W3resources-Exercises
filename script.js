@@ -413,7 +413,51 @@ function exercise32(num1, num2) {
   }
 }
 
+function exercise33(num1, num2) {
+  if ((num1 >= 40 && num1 <= 60 || num1 >= 70 && num1 <= 100) ||
+      (num2 >= 40 && num2 <= 60 || num2 >= 70 && num2 <= 100)) {
+    console.log("They are in range");
+  } else {
+    console.log("They are out of range");
+  }
+}
+
+function exercise34(num1, num2) {
+  if (num1 >= 40 && num1 <= 60 && num2 >= 40 && num2 <= 60) {
+    console.log(Math.max(num1, num2));
+  } else {
+    console.log("Both numbers should be in the range of 40 to 60 inclusive");
+  }
+}
+
+function exercise35(str, char) {
+  // Check if the string length is at least 4 characters long
+  if (str.length >= 4) {
+    // Check if the specified character exists between the 2nd and 4th positions
+    if (str.substring(1, 4).includes(char)) {
+      console.log(true);
+    }
+  }
+  console.log(false);
+}
+
+function exercise36(num1, num2, num3) {
+  // checking if all numbers are positive
+  if(num1 >= 0 && num2 >= 0 && num3 >= 0) { 
+    // finding last digit of num1
+    let lastDigit1 = num1 % 10; 
+    // finding last digit of num2
+    let lastDigit2 = num2 % 10; 
+    // finding last digit of num3
+    let lastDigit3 = num3 % 10; 
+    // checking if all last digits are the same
+    console.log(lastDigit1 === lastDigit2 && lastDigit2 === lastDigit3); 
+  } else {
+    // error message for non-positive integers
+    console.log("Please enter positive integers only."); 
+  }
+}
 
 
 // call the exercise function there
-exercise31(1,2,3);
+exercise33(1,2);
