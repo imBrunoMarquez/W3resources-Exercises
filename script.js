@@ -458,6 +458,51 @@ function exercise36(num1, num2, num3) {
   }
 }
 
+function exercise37(str) {
+  if (str.length < 3) {
+    console.log(str.toUpperCase());
+  } else {
+    console.log(str.substring(0, 3).toLowerCase() + str.substring(3));
+  }
+}
+
+/**
+ * Returns true if the student has received an A+ grade,
+ * otherwise returns false.
+ *
+ * @param {number} totalMarks - The total marks scored by the student.
+ * @param {string} examType - The type of examination 
+ * @returns {boolean} - Whether or not the student has received an A+ grade.
+ */
+function exercise38(totalMarks, examType) {
+  if (examType === "Final-exam" && totalMarks >= 90) {
+    console.log(true);
+  } else if (totalMarks >= 89 && totalMarks <= 100) {
+    console.log(true);
+  } else {
+    console.log(false);
+  }
+}
+
+function exercise39(num1, num2) {
+  // Compute the sum of the two given integers
+  let sum = num1 + num2;
+
+  // Check if the sum is in the range 50..80
+  if (sum >= 50 && sum <= 80) {
+    console.log(65); // Return 65 if sum is in the range
+  } else {
+    console.log(80); // Return 80 if sum is not in the range
+  }
+}
+
+function exercise40(num1, num2) {
+  if (num1 === 8 || num2 === 8 || num1 + num2 === 8 || Math.abs(num1 - num2) === 8) {
+    console.log(true);
+  } else {
+    console.log(false);
+  }
+}
 
 // call the exercise function there
-exercise33(1,2);
+exercise37("te");
