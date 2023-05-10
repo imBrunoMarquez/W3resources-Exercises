@@ -504,5 +504,25 @@ function exercise40(num1, num2) {
   }
 }
 
+function exercise41(num1, num2, num3) {
+  if (num1 === num2 && num2 === num3) {
+    console.log(30);
+  } else if (num1 === num2 || num1 === num3 || num2 === num3) {
+    console.log(40);
+  } else {
+    console.log(20);
+  }
+}
+
+function exercise42(num1, num2, num3) {
+  if (num1 < num2 && num2 < num3) {
+    console.log("Strict mode");
+  } else if (num1 <= num2 && num2 <= num3) {
+    console.log("Soft mode");
+  } else {
+    console.log("Not increasing");
+  }
+}
+
 // call the exercise function there
 exercise37("te");
