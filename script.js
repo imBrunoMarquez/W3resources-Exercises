@@ -276,5 +276,17 @@ function exercise20(num1, num2) {
   }
 }
 
+function exercise21(str) {
+  // Check if the string starts with 'Py'
+  if (str.substring(0, 2) === 'Py') {
+    // If yes, return the original string
+    console.log(str);
+  } else {
+    // If not, add 'Py' in front of the string and return the new string
+    console.log('Py' + str);
+  }
+}
+
+
 // call the exercise function there
-exercise20(45, -20);
+exercise21("test");
