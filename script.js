@@ -249,5 +249,32 @@ function exercise17(num) {
   }
 }
 
+function exercise18(num1, num2) {
+  if (num1 === 50 || num2 === 50 || num1 + num2 === 50) {
+    console.log(true);
+  } else {
+    console.log(false);
+  }
+}
+
+function exercise19(num) { 
+  if (Math.abs(100 - num) <= 20 || Math.abs(400 - num) <= 20) { 
+    // find the absolute difference between the given number and 100 or 400
+    // checking if the absolute difference is less than or equal to 20
+    console.log(num + ' is within 20 of 100 or 400'); 
+  } else {
+    console.log(num + ' is not within 20 of 100 or 400'); 
+  }
+}
+
+function exercise20(num1, num2) {
+  // Check if one is positive and another is negative
+  if ((num1 < 0 && num2 > 0) || (num1 > 0 && num2 < 0)) { 
+    console.log("One number is positive and another is negative.");
+  } else {
+    console.log("Both numbers have the same sign or are zero.");
+  }
+}
+
 // call the exercise function there
-exercise17(5);
+exercise20(45, -20);
