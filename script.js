@@ -378,5 +378,42 @@ function exercise29(num1, num2, num3) {
     console.log(false);
   }
 }
+
+function exercise30(str) {
+  // Check if "Script" appears at the 5th position
+  if (str.length >= 6 && str.substring(4, 10) === "Script") {
+    // If "Script" appears in the string, return the string without "Script"
+    console.log(str.substring(0, 4) + str.substring(10, str.length));
+  } else {
+    // Otherwise, return the original string
+    console.log(str);
+  }
+}
+
+function exercise31(num1, num2, num3) {
+  if (num1 >= num2 && num1 >= num3) {
+    console.log(num1);
+  } else if (num2 >= num1 && num2 >= num3) {
+    console.log(num2);
+  } else {
+    console.log(num3);
+  }
+}
+
+function exercise32(num1, num2) {
+  const diffNum1 = Math.abs(100 - num1);
+  const diffNum2 = Math.abs(100 - num2);
+  
+  if (diffNum1 === diffNum2) {
+    console.log("Both numbers are equidistant from 100.");
+  } else if (diffNum1 < diffNum2) {
+    console.log(`${num1} is closer to 100.`);
+  } else {
+    console.log(`${num2} is closer to 100.`);
+  }
+}
+
+
+
 // call the exercise function there
-exercise27("qwerty");
+exercise31(1,2,3);
