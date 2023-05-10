@@ -295,6 +295,49 @@ function exercise22(str, index) {
   console.log(modifiedStr);
 }
 
+function exercise23(str) {
+  // Check if the length of the string is greater than or equal to 1
+  if (str.length >= 1) {
+    // Get the first character of the string
+    const firstChar = str.charAt(0);
+    // Get the last character of the string
+    const lastChar = str.charAt(str.length - 1);
+    // Get the substring between the first and last characters
+    const middleChars = str.substring(1, str.length - 1);
+    // Return the modified string with the first and last characters swapped
+    console.log(lastChar + middleChars + firstChar);
+  } else {
+    // If the length of the string is less than 1, return the original string
+    console.log(str);
+  }
+}
+
+function exercise24(str) {
+  // Check if string is empty or has only one character
+  if (str.length <= 1) {
+    console.log(str);
+  }
+  
+  // Get the first character of the string
+  const firstChar = str.charAt(0);
+  
+  // Return the new string with first character added to the front and back
+  console.log(firstChar + str + firstChar);
+}
+
+function exercise25(num) {
+  // check if the number is positive
+  if (num > 0) {
+    // check if the number is a multiple of 3 or 7 using the remainder operator %
+    if (num % 3 === 0 || num % 7 === 0) {
+      console.log(`${num} is a multiple of 3 or 7`);
+    } else {
+      console.log(`${num} is not a multiple of 3 or 7`);
+    }
+  } else {
+    console.log(`${num} is not a positive number`);
+  }
+}
 
 // call the exercise function there
-exercise22("test", 2);
+exercise25(21);
